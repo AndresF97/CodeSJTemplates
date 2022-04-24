@@ -11,4 +11,8 @@
 .navContainer{
     background-color: #646a74;
     color: white;
+    padding: 0%;
+}
+.ourWork:hover{
+    color: #d2d3d4;
 }
