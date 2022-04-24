@@ -4,36 +4,33 @@ import { Link } from "gatsby"
 
 const Navbar = () =>{
     return(
-        <div
-        style={{
-            background:"#646a74"
-        }}
-        >
-            <ul
-            style={{
-                listStyle:"none",
-                display:"flex",
-                justifyContent:"space-evenly",
-                tetxtColor:"#ffffff"
-            }}
+    <>
+        <div className="navContainer">
+            <nav
+            className="flex items-center p-3 flex-wrap"
             >   
-                <li>
+                <div>
                     <Link>Our Work</Link>
-                </li>
-                <li>
+                </div>
+                <div>
                     <Link>Get Involved</Link>
-                </li>
-                <li>
+                </div>
+                <div>
                     <Link>Events</Link>
-                </li>
-                <li>
+                </div>
+                <div>
                     <Link>About Us</Link>
-                </li>
-                <li>
-                    <Link><button>Donate</button></Link>
-                </li>
-            </ul>
+                </div>
+                <div>
+                    <Link>
+                    <button className="text-white m-2 p-3 font-semibold text-sm rounded-full donate">
+                        Donate
+                    </button>
+                    </Link>
+                </div>
+            </nav>
         </div>
+        </>
     )
 }
 

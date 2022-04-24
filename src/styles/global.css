@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.donate{
+    background-color: #5f96ba;
+}
+.donate:hover{
+    background-color: #5f89ba;
+}
+.navContainer{
+    background-color: #646a74;
+    color: white;
+}
