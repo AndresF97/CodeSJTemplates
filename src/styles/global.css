@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.donate{
+#donate{
     background-color: #5f96ba;
 }
 .donate:hover{
@@ -15,4 +15,7 @@
 }
 .ourWork:hover{
     color: #d2d3d4;
+}
+#mini-background{
+    background-color: #646a74;
 }
