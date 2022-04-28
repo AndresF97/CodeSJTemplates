@@ -5,6 +5,14 @@ import { Helmet } from "react-helmet";
 
 
 const Navbar = () =>{
+
+     const MenuBurger = (event) =>{
+        console.log(event.target.name)
+        let listItem = document.querySelector('ul');
+        //return  event.target.name === 'menu-outline' ? (event.target.name = 'close',listItem.classList.add('top-[80px]'), listItem.classList.add('opacity-100')) : (event.target.name ='menu-outline', listItem.classList.remove('top-[80px]'), listItem.classList.remove('opacity-100'))
+        return  event.target.name === 'menu-outline' ? (event.target.name = 'close',listItem.classList.add('top-[0px]', listItem.classList.remove('absolute'),listItem.classList.add('display:grid')), listItem.classList.add('opacity-100')) : (event.target.name ='menu-outline', listItem.classList.remove('top-[80px]'), listItem.classList.remove('opacity-100'), listItem.classList.add('absolute'), listItem.classList.remove('display:grid'))
+        
+    }
     return(
     <>  
         <Helmet>
@@ -25,7 +33,7 @@ const Navbar = () =>{
                         />
                     </span>
                     <span className="text-md cursor-pointer md:hidden block mx-2">
-                        <ion-icon name="menu-outline"></ion-icon>
+                        <ion-icon name="menu-outline"  onClick={MenuBurger}></ion-icon>
                     </span>
                 </div>
             <ul className=" md:flex md:item-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 " id="mini-background">
